@@ -1,11 +1,9 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html>
 <head>
   <link rel="shortcut icon" href="TPB.ico" type="image/x-icon">
-  
   <!-- Fonte "Old English Five" -->
   <link href="https://fonts.googleapis.com/css2?family=Old+English+Five&display=swap" rel="stylesheet">
-  
   <style>
     .navbar {
       overflow: hidden;
@@ -14,10 +12,6 @@
       top: 0;
       width: 100%;
       height: 40px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      z-index: 999;
     }
 
     .navbar2 {
@@ -27,6 +21,9 @@
       bottom: 0;
       width: 100%;
       height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
 
     body {
@@ -42,7 +39,7 @@
     .donate-button {
       height: 20px;
       width: 100%;
-      max-width: 150px;
+      max-width: 150px; /* opcional: evita ficar largo demais */
       background-color: #000000;
       color: #ffffff;
       font-family: 'Old English Five', cursive;
@@ -52,30 +49,29 @@
       line-height: 20px;
       cursor: default;
       outline: none;
+      margin: 10px auto; /* centraliza verticalmente dentro da navbar */
+      display: block;
     }
 
     iframe {
       margin-top: 40px;
       margin-bottom: 40px;
       width: 100.8%;
-      height: 562px;
+      height: 586px;
       border: none;
     }
   </style>
 </head>
 <body>
 
-  <!-- NAVBAR BRANCA COM BOTÃO "DONATE" -->
   <div class="navbar">
     <button class="donate-button">Donate</button>
   </div>
 
-  <!-- NAVBAR AMARELA -->
   <div class="navbar2 border">
-    <a href="#frase?" class="active"></a>
+    <button class="donate-button">Donate</button>
   </div>
 
-  <!-- CONTEÚDO PRINCIPAL -->
   <iframe src="https://lll7u7.wixstudio.com/today"></iframe>
 
 </body>
