@@ -1,6 +1,8 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="shortcut icon" href="TPB.ico" type="image/x-icon">
 
   <!-- Fonte alternativa similar à "Old English Five" -->
@@ -20,4 +22,79 @@
       height: 42px;
       background-color: #ffffff;
       display: flex;
-      align
+      align-items: center;
+      justify-content: space-between; /* Isso alinha o centro e o botão nas pontas */
+      padding: 0 20px;
+      z-index: 9999;
+    }
+
+    .navbar-center {
+      margin: 0 auto;
+      font-family: 'UnifrakturCook', cursive;
+      font-size: 20px;
+      color: #000;
+    }
+
+    .donate-link {
+      display: none; /* Escondido inicialmente */
+    }
+
+    .donate-image {
+      height: 20px;
+      cursor: pointer;
+    }
+
+    .navbar2 {
+      overflow: hidden;
+      background-color: #fecc00;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      height: 40px;
+      z-index: 9999;
+    }
+
+    .border {
+      border: 1px solid #ffffff;
+    }
+
+    iframe {
+      width: 100%;
+      height: 586px;
+      border: none;
+      display: block;
+      margin-top: 42px;
+      margin-bottom: 40px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAVBAR SUPERIOR -->
+  <div class="navbar">
+    <div class="navbar-center">Seu Logo ou Nome Aqui</div>
+    <a href="https://www.exemplo.com/doacao" target="_blank" class="donate-link" id="donateButton">
+      <img src="donate-icon.svg" alt="Donate" class="donate-image">
+    </a>
+  </div>
+
+  <!-- NAVBAR INFERIOR -->
+  <div class="navbar2 border">
+    <a href="#frase?" class="active"></a>
+  </div>
+
+  <!-- CONTEÚDO PRINCIPAL -->
+  <iframe src="https://lll7u7.wixstudio.com/today"></iframe>
+
+  <!-- SCRIPT PARA EXIBIR O BOTÃO DEPOIS DE 26 SEGUNDOS -->
+  <script>
+    setTimeout(() => {
+      const donateBtn = document.getElementById('donateButton');
+      if (donateBtn) {
+        donateBtn.style.display = 'block';
+      }
+    }, 26000); // 26 segundos
+  </script>
+
+</body>
+</html>
