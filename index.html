@@ -1,12 +1,24 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
 <head>
-  <link rel="shortcut icon" href="TPB.ico" type="image/x-icon">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- ZOOM 100% -->
 
-  <!-- Fonte alternativa similar à "Old English Five" -->
+  <link rel="shortcut icon" href="TPB.ico" type="image/x-icon">
   <link href="https://fonts.googleapis.com/css2?family=UnifrakturCook:700&display=swap" rel="stylesheet">
 
   <style>
+    /* ZOOM 100% */
+    html {
+      zoom: 100%;
+    }
+
+    body {
+      background-color: #ffffff;
+      margin: 0;
+      padding: 0;
+    }
+
     .navbar {
       overflow: hidden;
       background-color: #ffffff;
@@ -16,7 +28,8 @@
       height: 42px;
       display: flex;
       align-items: center;
-      justify-content: center;
+      justify-content: flex-end; /* Alinha o botão à direita */
+      padding-right: 16px; /* Espaço da borda direita */
       z-index: 9999;
     }
 
@@ -30,18 +43,13 @@
       z-index: 9999;
     }
 
-    body {
-      background-color: #ffffff;
-      margin: 0;
-      padding: 0;
-    }
-
     .border {
       border: 1px solid #ffffff;
     }
 
     .donate-image {
       height: 20px;
+      cursor: pointer;
     }
 
     iframe {
@@ -49,12 +57,14 @@
       height: 586px;
       border: none;
       display: block;
+      margin-top: 42px; /* Para não ficar atrás da navbar */
+      margin-bottom: 40px; /* Para não ficar atrás da navbar inferior */
     }
   </style>
 </head>
 <body>
 
-  <!-- NAVBAR BRANCA COM IMAGEM CLICÁVEL -->
+  <!-- NAVBAR BRANCA COM BOTÃO À DIREITA -->
   <div class="navbar">
     <a href="https://www.exemplo.com/doacao" target="_blank">
       <img src="donate-icon.svg" alt="Donate" class="donate-image">
