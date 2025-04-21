@@ -1,20 +1,12 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html>
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="shortcut icon" href="TPB.ico" type="image/x-icon" />
+  <link rel="shortcut icon" href="TPB.ico" type="image/x-icon">
 
   <!-- Fonte alternativa similar à "Old English Five" -->
-  <link href="https://fonts.googleapis.com/css2?family=UnifrakturCook:700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=UnifrakturCook:700&display=swap" rel="stylesheet">
 
   <style>
-    body {
-      background-color: #ffffff;
-      margin: 0;
-      padding: 0;
-    }
-
     .navbar {
       overflow: hidden;
       background-color: #ffffff;
@@ -28,15 +20,6 @@
       z-index: 9999;
     }
 
-    .donate-link {
-      display: none; /* Escondido inicialmente */
-    }
-
-    .donate-image {
-      height: 20px;
-      cursor: pointer;
-    }
-
     .navbar2 {
       overflow: hidden;
       background-color: #fecc00;
@@ -47,8 +30,18 @@
       z-index: 9999;
     }
 
+    body {
+      background-color: #ffffff;
+      margin: 0;
+      padding: 0;
+    }
+
     .border {
       border: 1px solid #ffffff;
+    }
+
+    .donate-image {
+      height: 20px;
     }
 
     iframe {
@@ -56,38 +49,25 @@
       height: 586px;
       border: none;
       display: block;
-      margin-top: 42px;
-      margin-bottom: 40px;
     }
   </style>
 </head>
 <body>
 
-  <!-- NAVBAR SUPERIOR -->
+  <!-- NAVBAR BRANCA COM IMAGEM CLICÁVEL -->
   <div class="navbar">
-    <!-- Botão DOAR (inicialmente invisível) -->
-    <a href="https://www.exemplo.com/doacao" target="_blank" class="donate-link" id="donateButton">
-      <img src="donate-icon.svg" alt="Donate" class="donate-image" />
+    <a href="https://www.exemplo.com/doacao" target="_blank">
+      <img src="donate-icon.svg" alt="Donate" class="donate-image">
     </a>
   </div>
 
-  <!-- NAVBAR INFERIOR -->
+  <!-- NAVBAR AMARELA -->
   <div class="navbar2 border">
     <a href="#frase?" class="active"></a>
   </div>
 
   <!-- CONTEÚDO PRINCIPAL -->
   <iframe src="https://lll7u7.wixstudio.com/today"></iframe>
-
-  <!-- SCRIPT PARA MOSTRAR O BOTÃO APÓS 16 SEGUNDOS -->
-  <script>
-    setTimeout(() => {
-      const donateBtn = document.getElementById("donateButton");
-      if (donateBtn) {
-        donateBtn.style.display = "block";
-      }
-    }, 16000); // 16 segundos
-  </script>
 
 </body>
 </html>
